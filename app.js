@@ -13,14 +13,30 @@ app.set('view engine','ejs');
 mongoose.connect("mongodb+srv://admin-rehan:test123@cluster0.e6sod.mongodb.net/crswrdDB");
 
 const crswrdSchema = {
+    _id: String,
     date: String,
-    word: String,
-    hint: String,
-    solution: String,
-    clue: String,
-    source: String,
-    source_date: String,
-    difficulty: Number
+    clue1: String,
+    clue2: String,
+    clue3: String,
+    clue4: String,
+    difficulty1: String,
+    difficulty2: String,
+    difficulty3: String,
+    difficulty4: String,
+    hint1: String,
+    hint2: String,
+    hint3: String,
+    hint4: String,
+    number: String,
+    solution1: String,
+    solution2: String,
+    solution3: String,
+    solution4: String,
+    word1: String,
+    word2: String,
+    word3: String,
+    word4: String,
+    
 }
 
 const Crswrd = mongoose.model("Crswrd", crswrdSchema);
